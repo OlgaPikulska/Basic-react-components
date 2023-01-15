@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 
 
 
-export const FriendList = ({ friends }) => {
+export const FriendList = ({ title, friends }) => {
     return (
         <section className={css.friendListBox}>
+            {title !== undefined && (<h2 className={css.title}>{title}'s friend list:</h2>)}
             <ul className={css.friendList}>
                 {friends.map(friend => (
                     <li className={css.item} key={friend.id}>
@@ -20,5 +21,6 @@ export const FriendList = ({ friends }) => {
 }
 
 FriendList.propTypes = {
+    title: PropTypes.string,
     friends: PropTypes.array.isRequired,
 };

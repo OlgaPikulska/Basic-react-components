@@ -10,9 +10,6 @@ function getRandomHexColor() {
 
 
 export const Statistics = ({ title, stats }) => {
-    // const statsLength = stats.length;
-    // const sectionWidth = 100 / statsLength
-    // console.log(sectionWidth)
     return (
         < section className={css.statistics} >
             {title !== undefined && (<h2 className={css.title}>{title}</h2>)}
@@ -20,7 +17,6 @@ export const Statistics = ({ title, stats }) => {
                 {stats.map(stat => (
                     <li style={{
                         backgroundColor: getRandomHexColor(),
-                        // width: sectionWidth,
                     }} className={css.item}
                         key={stat.id}
                     >
