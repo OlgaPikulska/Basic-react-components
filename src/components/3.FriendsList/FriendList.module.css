@@ -1,0 +1,39 @@
+@import-normalize;
+
+.friendListBox {
+  margin-top: 35px;
+}
+
+.friendList {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.41);
+  background-color: white;
+}
+
+.status {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: 10px;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  margin: 5px 10px 5px 10px;
+}
