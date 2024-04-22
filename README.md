@@ -1,4 +1,4 @@
-# goit-react-hw-01-components
+# Basic React Components
 
 Application with an example of social media profile created with React, JavaScript and CSS3.
 
